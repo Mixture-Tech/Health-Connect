@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap&subset=vietnamese");
+
+/* @font-face cho các font tải về */
+@layer base {
+    @font-face {
+        font-family: 'Poppins-Regular';
+        src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Poppins-Bold';
+        src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Poppins-SemiBold';
+        src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+    }
+
+    /* Các font khác nếu có thể thêm */
+    @font-face {
+        font-family: 'Poppins-Light';
+        src: url('assets/fonts/Poppins-Light.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Poppins-Medium';
+        src: url('assets/fonts/Poppins-Medium.ttf') format('truetype');
+
+    }
+
+    @font-face {
+        font-family: 'Poppins-ExtraBold';
+        src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    }
+
+    /* Đảm bảo font mặc định là Poppins */
+    * {
+        font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+    }
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

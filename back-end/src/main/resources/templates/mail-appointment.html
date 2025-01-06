@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cuộc hẹn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .appointment-details {
+            background-color: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            height: auto;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img class="logo" src="https://raw.githubusercontent.com/Mixture-Team/Doctor-Appointment/main/app/assets/images/Logo.png
+" alt="Logo">
+    <h1 th:text="${title}">Thông tin cuộc hẹn</h1>
+
+    <p>Kính gửi <span th:text="${patientName}">Bệnh nhân</span>,</p>
+
+    <p th:text="${message}">Chi tiết cuộc hẹn của bạn như sau:</p>
+
+    <div class="appointment-details">
+        <p><strong>Bác sĩ:</strong> <span th:text="${doctorName}">Bác sĩ Smith</span></p>
+        <p><strong>Ngày:</strong> <span th:text="${appointmentDate}">1 Tháng 6, 2024</span></p>
+        <p><strong>Giờ:</strong> <span th:text="${appointmentTime}">10:00 sáng</span></p>
+    </div>
+
+    <p th:if="${isReminder}">Đây là lời nhắc nhở về cuộc hẹn sắp tới của bạn. Vui lòng đến đúng giờ.</p>
+
+    <p th:if="${isConfirmation}">Cuộc hẹn của bạn đã được đặt thành công. Chúng tôi mong được gặp bạn.</p>
+
+<!--    <a th:href="${url}" class="cta-button" th:text="${textBtn}">Xem chi tiết cuộc hẹn</a>-->
+
+    <div class="footer">
+        <p>Cảm ơn bạn đã chọn dịch vụ đặt lịch hẹn khám sức khỏe của chúng tôi.</p>
+        <p>&copy; <span th:text="${#dates.year(#dates.createNow())}">2024</span> HEALTH CONNECT - MIXTURE TEAM</p>
+    </div>
+</div>
+</body>
+</html>
