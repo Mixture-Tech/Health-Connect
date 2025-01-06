@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap&subset=vietnamese");
@@ -40,12 +41,35 @@
     }
 
     /* Đảm bảo font mặc định là Poppins */
+=======
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@layer base {
+    @font-face {
+        font-family: PoppinsBold;
+        src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: PoppinsRegular;
+        src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: PoppinsSemiBold;
+        src: url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+    }
+
+>>>>>>> cd7818233d6b3267e48300f010af947bab4a426d
     * {
         font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd7818233d6b3267e48300f010af947bab4a426d
 html,
 body {
     height: 100%;
