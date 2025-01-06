@@ -12,8 +12,8 @@ import lombok.*;
 public class Disease {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private Boolean id;
-
+    private Integer id;
+  
     @Column(name = "disease_name")
     private String diseaseName;
 
