@@ -18,7 +18,7 @@ public class ClientReview {
     private String id;
 
     @Column(name = "is_review_anonymous")
-    private Integer isReviewAnonymous;
+    private String isReviewAnonymous;
 
     @Column(name = "wait_time_rating")
     private int waitTimeRating;
