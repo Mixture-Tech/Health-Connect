@@ -253,4 +253,3 @@ Feel free to report issues or suggest improvements in our [GitHub Issues](https:
 **Contact:**
 
 - **Email:** vanhoang1231234@gmail.com
-- **Website:** [Health-Connect](https://health-connect.com)
